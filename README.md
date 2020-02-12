@@ -10,7 +10,12 @@ Build Information: Python | Python Flask | SQLAlchemy | SMTPLib
 Senior Developer: Alanté D. Powell
 
 
-CEO/Founder: Deonte L. Powell | Alanté D. Powell
+CEO/Founder/President: Deonte L. Powell 
+
+
+Vice President: Alanté D. Powell
+
+
 
 # What's happening with us?
 
