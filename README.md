@@ -31,7 +31,7 @@ III. In terminal type: "git clone https://github.com/alantedpowell/PowellTech.gi
 IV. Terminal will clone the directory -- "cd" to the repo
 
 
-V. (Verify that you have python 3 installed) type and run "python run.py"
+V. (Verify that you have python 3 installed) type and run "python3 run.py"
 
 
 VI. This should launch the site on "localhost: 5000"
