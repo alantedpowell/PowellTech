@@ -6,6 +6,12 @@ Hello, and welcome to PowellTech! PowellTech is your solution to when your compu
 
 Build Information: Python | Python Flask | SQLAlchemy | SMTPLib
 
+
+Senior Developer: Alanté D. Powell
+
+
+CEO/Founder: Deonte L. Powell | Alanté D. Powell
+
 # What's happening with us?
 
 ~ August 1, 2019 | We are in the process of publicly hosting this site, in order to use it please follow the steps below.
