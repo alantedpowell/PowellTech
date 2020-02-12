@@ -1,4 +1,4 @@
-# PowellTech
+# PowellTech ©
 Computer Repair Service | Powell Industries
 
 Hello, and welcome to PowellTech! PowellTech is your solution to when your computer bed bugs bite.
