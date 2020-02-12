@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1
+        style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+      >
+        <img
+          src="https://i.ibb.co/bd26Cym/Small-Logo.jpg"
+          alt="Small-Logo"
+          style="max-width:25%; border:0"
+        />
+      </h1>
+      <div
+        style="margin-left:5%;margin-right:5%;font-family:Gothic A1,sans-serif;font-weight:100;"
+      >
+        <h1
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          Welcome to PowellTech!
+        </h1>
+        <h2
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          We just wanted to extend a warm welcome...
+        </h2>
+        <hr />
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif; font-weight: 100"
+        >
+          Hello there, {form.first_name.data}, and welcome to PowellTech.
+          <br />
+          <br />
+          We hope you are doing well and we are so thrilled that you have joined
+          the team.
+          <br />
+          Just a few housekeeping points we have for you:
+          <br />
+          <br />
+          I. We also are not fans of spam, so rest assured, you will not receive
+          spam from us. However, just as a security measure, each time you log
+          in, log out, or create a new repair, we will reach out to you to
+          ensure your account and your personal information remains secure.
+          That's it.
+          <br />
+          <br />
+          II. In the event that you are concerned about the security of your
+          account, please do not hesitate to
+          <a href="{{ url_for('contact') }}">contact us</a>.
+          <br />
+          <br />
+          III. You may now log in to your account to begin your first repair!
+          <br />
+          <br />
+          That's all we have for you. Again, welcome to PowellTech.
+          <br />
+          <br />
+        </h3>
+        <hr />
+        <h3 style="text-align:center; font-weight: 100">
+          If you have any questions, please do not hesitate to reach out to us,
+          we're here to help!
+        </h3>
+        <ul style="list-style:none;display:inline;">
+          <li style="text-decoration:underline;text-align:center;">
+            Contact Us
+          </li>
+          <li style="margin-top:5px;text-align:center;">
+            Phone: +1 (404) 555-5555
+          </li>
+          <li style="text-align:center;margin-bottom:20px;">
+            E-mail: powell.ind.inc@gmail.com
+          </li>
+        </ul>
+        <hr style="margin-top:5px;" />
+        <p style="text-align:center;">
+          This message was intended for {form.first_name.data}
+          {form.last_name.data}. This message has been automatically generated,
+          please do not reply to this message as PowellTech will not receive it.
+          If you did not recently register for a PowellTech &copy account,
+          please contact us immediately to be removed from our database; it is
+          also recommended that you change your e-mail password. Please feel
+          free to review the PowellTech <a href="#">Terms of Service</a> and
+          <a href="#">Privacy Policy</a>.
+        </p>
+        <hr />
+        <h6
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          <img
+            src="https://i.ibb.co/bd26Cym/Small-Logo.jpg"
+            alt="Small-Logo"
+            style="width:10%; border:0"
+          />
+        </h6>
+        <p style="text-align:center;">
+          Copyright &copy 2019 Powell Industries
+        </p>
+        <p style="text-align:center;">
+          All Rights Reserved.
+        </p>
+      </div>
+    </header>
+  </body>
+</html>

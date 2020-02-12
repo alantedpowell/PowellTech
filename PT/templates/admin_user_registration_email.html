@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1
+        style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+      >
+        <img
+          src="https://i.ibb.co/bd26Cym/Small-Logo.jpg"
+          alt="Small-Logo"
+          style="max-width:25%; border:0"
+        />
+      </h1>
+      <div
+        style="margin-left:5%;margin-right:5%;font-family:Gothic A1,sans-serif;font-weight:100;"
+      >
+        <h1
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          Hello, {form.first_name.data} {form.last_name.data}.
+        </h1>
+        <h2
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          You have been granted administrative access to PowellTech.com.
+        </h2>
+        <hr />
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif; font-weight: 100"
+        >
+          Hello, {form.first_name.data}, {current_user.first_name}
+          {current_user.last_name} has granted you administrative access to
+          PowellTech.com.
+          <br />
+          <br />
+          We hope you are doing well and we are so thrilled that you have joined
+          the team.
+          <br />
+          Just a few housekeeping points we have for you:
+          <br />
+          <br />
+          I. Your employee ID is: {form.employee_id.data}
+          <br />
+          <br />
+          II. Your temporary password has been automatically set for you as the
+          last 4 digits of your phone number, followed by the first 3 digits
+          without spaces.
+          <br />
+          <br />
+          III. Once logged in, please click on your name in the top right
+          corner, and reset your password.
+          <br />
+          <br />
+          (Your temporary password will expire in 24 hours, or when your
+          password is reset by you; whichever is soonest.)
+          <br />
+          <br />
+          IV. For your informational purposes, your account was created by:
+          {current_user.first_name} {current_user.last_name}.
+          <br />
+          <br />
+          That's all we have for you. Again, welcome to PowellTech.
+          <br />
+          <br />
+        </h3>
+        <hr />
+        <ul style="list-style:none;display:inline;">
+          <li style="text-decoration:underline;text-align:center;">
+            Contact Us
+          </li>
+          <li style="margin-top:5px;text-align:center;">
+            Phone: +1 (404) 555-5555
+          </li>
+          <li style="text-align:center;margin-bottom:20px;">
+            E-mail: powell.ind.inc@gmail.com
+          </li>
+        </ul>
+        <hr style="margin-top:5px;" />
+        <p style="text-align:center;">
+          This message was intended for {form.first_name.data}
+          {form.last_name.data} ({form.employee_id.data}). This message has been
+          automatically generated, please do not reply to this message as
+          PowellTech will not receive it.
+        </p>
+        <hr />
+        <h6
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          <img
+            src="https://i.ibb.co/bd26Cym/Small-Logo.jpg"
+            alt="Small-Logo"
+            style="width:10%; border:0"
+          />
+        </h6>
+        <p style="text-align:center;">
+          Copyright &copy 2019 Powell Industries
+        </p>
+        <p style="text-align:center;">
+          All Rights Reserved.
+        </p>
+      </div>
+    </header>
+  </body>
+</html>

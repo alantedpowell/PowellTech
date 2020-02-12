@@ -1,0 +1,609 @@
+#navbar-logo {
+  height: 65px;
+  width: auto;
+}
+
+#navbar-logo-top {
+  height: 65px;
+  width: auto;
+  padding-left: 25%;
+}
+
+#mainNav {
+  min-height: 56px;
+  background-color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #343b6d;
+  border: 1px solid #343b6d;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #161616;
+  font-weight: 700;
+  padding: 0.9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+h6 {
+  color: #a6a6a6;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  #mainNav .navbar-brand {
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  #mainNav .nav-link:active {
+    color: #ffffff;
+  }
+
+  #mainNav.navbar-shrink {
+    background-color: #ffffff;
+    color: #fff;
+  }
+
+  #mainNav.navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #343b6d;
+  }
+
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #343b6d;
+  }
+
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #343b6d;
+    outline: none;
+    border-bottom: 0.25rem solid #343b6d;
+  }
+}
+
+.masterHead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(22, 22, 22, 0.1)),
+      color-stop(75%, rgba(22, 22, 22, 0.5)),
+      to(#161616)
+    ),
+    url("/static/assets/macbook.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.1) 0%,
+      rgba(22, 22, 22, 0.5) 75%,
+      #161616 100%
+    ),
+    url("/static/assets/macbook.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masterHead h1 {
+  font-family: Catamaran;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masterHead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masterHead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masterHead {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .masterHead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+
+  .masterHead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+    color: white;
+  }
+}
+
+.logo {
+  height: 150px;
+}
+
+.btn {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  font-family: Catamaran;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: #343b6d;
+  margin: 25px;
+}
+
+.btn-primary:hover {
+  background-color: #343b6d;
+}
+
+.btn-primary:focus {
+  background-color: #fff;
+}
+
+.btn-primary:active {
+  background-color: #fff !important;
+  color: black;
+}
+
+.temperature-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(rgba(22, 22, 22, 0.9), rgba(22, 22, 22, 0.7)); */
+}
+
+.location,
+.temperature {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #a6a6a6;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
+
+.about-section {
+  padding-top: 3rem;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#161616),
+    color-stop(75%, rgba(22, 22, 22, 0.9)),
+    to(rgba(22, 22, 22, 0.8))
+  );
+  background: linear-gradient(
+    to bottom,
+    #161616 0%,
+    rgba(22, 22, 22, 0.9) 75%,
+    rgba(22, 22, 22, 0.8) 100%
+  );
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: transparent;
+}
+
+.title .contact {
+  vertical-align: middle;
+}
+
+.projects-section {
+  padding: 3rem;
+  background-color: #d3d3d3;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #343b6d;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #343b6d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+.signup-section {
+  padding: 10rem 0;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(22, 22, 22, 0.1)),
+      color-stop(75%, rgba(22, 22, 22, 0.5)),
+      to(#161616)
+    ),
+    url("../img/bg-signup.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.1) 0%,
+      rgba(22, 22, 22, 0.5) 75%,
+      #161616 100%
+    ),
+    url("/static/assets/macbook.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: Catamaran;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+  color: black;
+}
+
+label {
+  color: white;
+}
+
+.contact-section {
+  padding: 5rem 0 0;
+}
+
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #343b6d;
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: Catamaran;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #343b6d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+a .address:hover,
+.email:hover,
+.phone_number:hover {
+  color: #a6a6a6;
+}
+
+body {
+  font-family: Catamaran;
+  letter-spacing: 0.0625em;
+}
+
+a {
+  color: #343b6d;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.bg-black {
+  background-color: #161616 !important;
+}
+
+.bg-primary {
+  background-color: #64a19d !important;
+}
+
+.text-primary {
+  color: #343b6d !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+/* Decorative Styles */
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.flash-message {
+  color: #006400;
+}
+
+section .temperature-section {
+  height: 10%;
+}
+
+.weather-heading {
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+
+.icon {
+  height: 25%;
+  text-align: center;
+}
+
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  top: 75%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(-45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+  transform: rotate(45deg);
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(30px, 30px);
+  }
+}
+
+.arrow2,
+.arrow2:before {
+  position: absolute;
+  left: 50%;
+}
+
+.arrow2 {
+  width: 40px;
+  height: 40px;
+  top: 75%;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(-45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #343b6d solid;
+  border-bottom: 2px #343b6d solid;
+  transform: rotate(45deg);
+}
+
+.arrow2:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+@keyframes arrow2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(30px, 30px);
+  }
+}
+
+.white {
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.left {
+  text-align: left;
+}
+
+span .right {
+  text-align: right;
+}
+
+.card .bg-light .mb-3 {
+  max-width: 18rem;
+  width: 5rem;
+}
+
+.card-text {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.card-title {
+  text-align: left;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.right {
+  float: right;
+}
+
+.purple {
+  color: #343b6d;
+}
+
+.grey {
+  color: #333;
+}
+
+.modal-dialog .modal-dialog-centered {
+  margin: auto;
+  padding: auto;
+}
+
+.bg-ptpurple {
+  background-color: #343b6d;
+  color: white;
+}

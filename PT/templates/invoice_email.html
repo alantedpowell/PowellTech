@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1
+        style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+      >
+        <img
+          src="https://i.ibb.co/bd26Cym/Small-Logo.jpg"
+          alt="Small-Logo"
+          style="max-width:25%; border:0"
+        />
+      </h1>
+      <div
+        style="margin-left:5%;margin-right:5%;font-family:Gothic A1,sans-serif;font-weight:100;"
+      >
+        <h1
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          {form.first_name.data} {form.last_name.data}, invoice
+          {form.order_number.data} is ready.
+        </h1>
+        <h2
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          Please review your invoice below:
+        </h2>
+        <hr />
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif; font-weight: 100"
+        >
+          {form.first_name.data} {form.last_name.data}
+          <br />
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Order Number:
+          <span style="text-align:right;">{form.order_number.data}</span>
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Customer Name:
+          <span style="text-align:right;"
+            >{form.first_name.data} {form.last_name.data}</span
+          >
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          {form.first_name.data} {form.last_name.data}'s Email Address:
+          <span style="text-align:right;">{form.email.data}</span>
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Repair Inquiry:
+          <span style="text-align:right;">{form.issue.data}</span>
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Device Manufacturer:
+          <span style="text-align:right;">{form.device_manufacturer.data}</span>
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Device Model:
+          <span style="text-align:right;">{form.device_model.data}</span>
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Device Operating System (After Repair):
+          <span style="text-align:right;">{form.device_os.data}</span>
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Device Return Method:
+          <span style="text-align:right;">{form.return_type.data}</span>
+          <br />
+        </h3>
+        <hr />
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Cost of Parts:
+          <span style="text-align:right;">${form.parts_price.data}</span>
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Cost of Labor:
+          <span style="text-align:right;">{form.labor.data}</span>
+          <br />
+        </h3>
+        <h3
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Promotions:
+          <span style="text-align:right;">({form.promotions.data})</span>
+          <br />
+        </h3>
+        <hr />
+        <h2
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100"
+        >
+          Total Repair Cost:
+          <span style="text-align:right;">${form.repair_price.data}</span>
+          <br />
+          Status: <span style="color:red;">UNPAID</span><br />
+          <br />
+          <i class="fab fa-cc-apple-pay"></i> | <i class="fab fa-cc-visa"></i> |
+          <i class="fab fa-cc-mastercard"></i> |
+          <i class="fab fa-cc-amex"></i> | <i class="fab fa-cc-discover"></i>
+        </h2>
+        <br />
+        <hr />
+        <h3 style="text-align:center; font-weight: 100">
+          If you have any questions, please do not hesitate to reach out to us,
+          we're here to help!
+        </h3>
+        <ul style="list-style:none;display:inline;">
+          <li style="text-decoration:underline;text-align:center;">
+            Contact Us
+          </li>
+          <li style="margin-top:5px;text-align:center;">
+            Phone: +1 (404) 555-5555
+          </li>
+          <li style="text-align:center;margin-bottom:20px;">
+            E-mail: powell.ind.inc@gmail.com
+          </li>
+        </ul>
+        <hr style="margin-top:5px;" />
+        <p style="text-align:center;">
+          This message was intended for {form.first_name.data}
+          {form.last_name.data}. This message has been automatically generated,
+          please do not reply to this message as PowellTech will not receive it.
+          If you did not recently complete a PowellTech &copy repair, please
+          contact us immediately to be removed from our database; it is also
+          recommended that you change your e-mail password. Please feel free to
+          review the PowellTech <a href="#">Terms of Service</a> and
+          <a href="#">Privacy Policy</a>.
+        </p>
+        <hr />
+        <h6
+          style="text-align:center;font-family:Gothic A1,sans-serif;font-weight:100;"
+        >
+          <img
+            src="https://i.ibb.co/bd26Cym/Small-Logo.jpg"
+            alt="Small-Logo"
+            style="width:10%; border:0"
+          />
+        </h6>
+        <p style="text-align:center;">
+          Copyright &copy 2019 Powell Industries
+        </p>
+        <p style="text-align:center;">
+          All Rights Reserved.
+        </p>
+      </div>
+    </header>
+  </body>
+</html>

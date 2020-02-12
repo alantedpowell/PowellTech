@@ -1,0 +1,132 @@
+{% from "_formhelpers.html" import render_field %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>{{legend}}</title>
+
+    <!-- Core Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom Fonts -- Font Awesome -- Font: Catamaran-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran"
+      rel="stylesheet"
+    />
+
+    <!-- Powell Tech CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',
+    filename='css/login.css') }}">
+  </head>
+
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img id="navbar-logo" src="{{ url_for('static',
+          filename='assets/SmallLogo.png') }}">©
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for('register') }}"
+                >Join Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- /Navbar Collapse -->
+      </div>
+      <!-- /Container -->
+    </nav>
+    <header class="masterHead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <img class="img-fluid header-logo" src="{{ url_for('static',
+          filename='assets/SmallLogo.png') }}">
+          <div class="content-section">
+            <form method="POST" action="">
+              {{ form.hidden_tag() }}
+              <fieldset class="form-group mt-5">
+                <div class="flash-message">
+                  {% with messages = get_flashed_messages() %} {% if messages %}
+                  {% for message in messages %} {{ message }} {% endfor %} {%
+                  endif %} {% endwith %}
+                </div>
+                <div class="form-group">
+                  {{ form.email.label(class="form-control-label") }} {% if
+                  form.email.errors %} {{ form.email(class="form-control
+                  form-control-lg is-invalid") }}
+                  <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                  </div>
+                  {% else %} {{ form.email(class="form-control form-control-lg")
+                  }} {% endif %}
+                </div>
+              </fieldset>
+              <div class="form-group">
+                {{ form.submit(class='btn btn-outline-info') }}
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer>
+      <p class="text-center text-white">
+        Powell Industries 2019 - All Rights Reserved.
+      </p>
+    </footer>
+    <!-- Jquery, Popper.js, bootstrap JS, custom JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+    <script src="{{ url_for('static', filename='js/grayscale.js') }}"></script>
+  </body>
+</html>

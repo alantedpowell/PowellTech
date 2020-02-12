@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family:Catamaran">
+    <header>
+      <h1 style="text-align:center;">
+        <img
+          style="width:20%;"
+          src="../static/assets/SmallLogo.jpg"
+          alt="Image of PowellTech Logo"
+        />
+      </h1>
+      <div style="background-color:lightgray;">
+        <h1 style="text-align:center">
+          Passwords are tough, but we're here to help.
+        </h1>
+        <h3 style="text-align:center;">
+          Hey there, {form.email.data}! PowellTech here. We noticed you were
+          having a hard time logging into your PowellTech account. Worry not,
+          we're here to help.
+          <br />
+          <br />
+
+          To reset your password, visit the following link:
+          <br />
+          <br />
+          {url_for('get_reset_token', token=token, _external=True)}''')
+        </h3>
+        <h3 style="text-align:center;">
+          If you have any questions, please do not hesitate to reach out to us,
+          we're here to help!
+        </h3>
+      </div>
+    </header>
+  </body>
+</html>

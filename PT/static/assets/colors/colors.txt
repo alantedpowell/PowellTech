@@ -1,0 +1,11 @@
+Logo Blue: 
+RGB: 52,59,109
+Hex: #343B6D
+
+Logo Gray:
+RGB: 166, 166, 166
+Hex: #A6A6A6
+
+Logo White:
+RGB: 255, 255, 255
+Hex: #FFFFFF
